@@ -33,7 +33,7 @@ const ContactPage = () => {
       <h3 className=' font-semibold px-12'>I am available for any freelance or internship or full-time positions.</h3>
       <div className='  w-full h-full flex justify-center sm:px-10 mt-6'>
         
-        <div className=' bg-[rgb(21,16,48)] border-2 border-blue-700 rounded-2xl sm:w-[55%] w-[100%] h-[27rem] '>
+        <div className=' bg-[rgb(21,16,48)] border-2 border-blue-700 rounded-2xl sm:w-[55%] w-[95%] h-[27rem] '>
           <form
             ref={form}
             onSubmit={handleSubmit}

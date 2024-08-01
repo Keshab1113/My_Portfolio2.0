@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from "react-helmet";
 import Projectcomponent from "../../components/MyAllprojects/MyAllprojects";
 import { Link } from 'react-router-dom';
+import { FaChevronRight } from "react-icons/fa";
 
 
 const Projects = () => {
@@ -18,7 +19,7 @@ const Projects = () => {
       </div>
       <div className=' w-full h-12 mb-10 mt-6'>
         <Link to={"https://github.com/Keshab1113?tab=repositories"}>
-          <button className=' float-end text-white border px-2 hover:bg-slate-800 rounded'>More Projects</button>
+          <button className=' float-end text-white hover:text-slate-400 px-2 rounded flex justify-center items-center'>All Projects<FaChevronRight className=' ml-2'/></button>
         </Link>
       </div>
     </div>
