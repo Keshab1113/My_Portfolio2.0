@@ -1,30 +1,24 @@
-import React from 'react'
-import AdminDetails from '../../components/HomePage/AdminDetails'
-import AdminPicture from '../../components/HomePage/AdminPicture'
+import React from 'react';
 import { Helmet } from "react-helmet";
-import bannerVideo from "/banner.mp4";
-import Header from "../../components/Header/Header"
+import Hero from '../../components/HomePage/Hero';
+import Process from '../../components/HomePage/Process';
+import Highlights from '../../components/HomePage/Highlights';
 
 const HomePage = () => {
   return (
-    <div className='h-screen flex sm:flex-row flex-col-reverse overflow-hidden'>
+    <div className="relative min-h-screen overflow-x-hidden">
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Keshab Das - Home</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <title>Keshab Das — Software Engineer & Web Developer</title>
+        <meta
+          name="description"
+          content="Portfolio of Keshab Das — Software Engineer and Web Developer specializing in MERN, React, and modern UI engineering."
+        />
       </Helmet>
-      <video
-        className="h-screen object-cover w-full"
-        src={bannerVideo}
-        autoPlay
-        loop
-        muted
-      />
-      <Header/>
-            <AdminDetails />
-            <AdminPicture/>
+      <Hero />
+      <Process />
+      <Highlights />
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

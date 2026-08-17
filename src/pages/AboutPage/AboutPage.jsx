@@ -1,22 +1,26 @@
-import React from 'react'
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import Education from '../../components/AboutMe/Education';
+import Experience from '../../components/AboutMe/Experience';
 import Skills from '../../components/AboutMe/Skills';
 
 const AboutPage = () => {
   return (
-      <div className=' pt-14 flex flex-col'>
-          <Helmet>
-              <meta charSet="utf-8" />
-              <title>Keshab Das - About</title>
-              <link rel="canonical" href="http://mysite.com/example" />
-          </Helmet>
+    <div className="relative pt-28 flex flex-col">
+      <Helmet>
+        <title>About — Keshab Das</title>
+        <meta
+          name="description"
+          content="About Keshab Das — Software Engineer & Web Developer from Kalyani, West Bengal. Education, experience, skills, and personal details."
+        />
+      </Helmet>
       <AboutMe />
+      <Experience />
       <Education />
-      <Skills/>
+      <Skills />
     </div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

@@ -1,12 +1,206 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keshab Das</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Primary Meta Tags -->
+    <title>Keshab Das — Software Engineer & Web Developer | MERN Stack Portfolio</title>
+    <meta name="title" content="Keshab Das — Software Engineer & Web Developer | MERN Stack Portfolio" />
+    <meta
+      name="description"
+      content="Portfolio of Keshab Das — Software Engineer and Web Developer from Kalyani, West Bengal. Specialized in the MERN stack, React, Node.js, Express, MongoDB, and modern UI engineering. Explore projects, experience, and resume."
+    />
+    <meta
+      name="keywords"
+      content="Keshab Das, Software Engineer, Web Developer, MERN Stack, React Developer, Node.js, Express, MongoDB, Tailwind CSS, Frontend Developer, Full Stack Developer, Kalyani, West Bengal, India, Portfolio"
+    />
+    <meta name="author" content="Keshab Das" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="IN-WB" />
+    <meta name="geo.placename" content="Kalyani, West Bengal, India" />
+    <meta name="geo.position" content="26.5438;88.7166" />
+    <meta name="ICBM" content="26.5438, 88.7166" />
+
+    <!-- Theme & Appearance -->
+    <meta name="theme-color" content="#05060a" />
+    <meta name="msapplication-TileColor" content="#05060a" />
+    <meta name="msapplication-navbutton-color" content="#05060a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Keshab Das" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Keshab Das — Portfolio" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Canonical & Sitemap -->
+    <link rel="canonical" href="https://keshabdas.dev/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Keshab Das — Blog" href="/feed.xml" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Keshab Das — Portfolio" />
+    <meta property="og:url" content="https://keshabdas.dev/" />
+    <meta property="og:title" content="Keshab Das — Software Engineer & Web Developer" />
+    <meta
+      property="og:description"
+      content="Software Engineer & Web Developer from India. Specialized in MERN stack, React, and modern UI engineering. Explore projects, experience, and resume."
+    />
+    <meta property="og:image" content="https://keshabdas.dev/mypicture.jpg" />
+    <meta property="og:image:secure_url" content="https://keshabdas.dev/mypicture.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Keshab Das — Software Engineer & Web Developer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_GB" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://keshabdas.dev/" />
+    <meta name="twitter:title" content="Keshab Das — Software Engineer & Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer & Web Developer from India. Specialized in MERN stack, React, and modern UI engineering."
+    />
+    <meta name="twitter:image" content="https://keshabdas.dev/mypicture.jpg" />
+    <meta name="twitter:image:alt" content="Keshab Das — Software Engineer & Web Developer" />
+    <meta name="twitter:creator" content="@Keshab1113" />
+    <meta name="twitter:site" content="@Keshab1113" />
+
+    <!-- LinkedIn / Pinterest -->
+    <meta property="pinterest-rich-pin" content="true" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://github.com" />
+    <link rel="dns-prefetch" href="https://www.linkedin.com" />
+    <link rel="dns-prefetch" href="https://wa.me" />
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Keshab Das",
+        "url": "https://keshabdas.dev/",
+        "image": "https://keshabdas.dev/mypicture.jpg",
+        "jobTitle": "Software Engineer & Web Developer",
+        "description": "Software Engineer and Web Developer specializing in the MERN stack, React, and modern UI engineering.",
+        "email": "mailto:keshabdas2003@gmail.com",
+        "telephone": "+91-9547019555",
+        "gender": "Male",
+        "birthDate": "2003-07-30",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kalyani",
+          "addressRegion": "West Bengal",
+          "addressCountry": "IN"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Jalpaiguri Government Engineering College",
+          "url": "https://jgec.ac.in/"
+        },
+        "knowsAbout": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "MERN Stack",
+          "Tailwind CSS",
+          "Next.js",
+          "Python",
+          "Machine Learning"
+        ],
+        "sameAs": [
+          "https://github.com/Keshab1113",
+          "https://www.linkedin.com/in/keshab-das-6a84ab234/",
+          "https://wa.me/919547019555",
+          "https://www.facebook.com/Keshab1113/"
+        ]
+      }
+    </script>
+
+    <!-- Structured Data: Website -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Keshab Das — Portfolio",
+        "url": "https://keshabdas.dev/",
+        "description": "Portfolio of Keshab Das — Software Engineer and Web Developer specializing in MERN stack, React, and modern web projects.",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@type": "Person",
+          "name": "Keshab Das"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://keshabdas.dev/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- Structured Data: Professional Service / Portfolio -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "2024-01-01",
+        "dateModified": "2026-08-17",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Keshab Das",
+          "jobTitle": "Full Stack Web Developer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Quantumhash Corporation",
+            "address": "Wilmington, Delaware, United States"
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
+  <body class="bg-ink-950 text-slate-200 antialiased">
+    <!-- Skip-to-content link for accessibility -->
+    <a
+      href="#root"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-cyan-400 focus:text-ink-950 focus:font-semibold"
+    >
+      Skip to content
+    </a>
+
+    <!-- No-JS fallback for crawlers -->
+    <noscript>
+      <div style="padding:2rem;font-family:system-ui;color:#fff;background:#05060a;text-align:center;">
+        <h1 style="color:#22d3ee;">Keshab Das — Software Engineer & Web Developer</h1>
+        <p>This portfolio requires JavaScript to render. Please enable JavaScript in your browser.</p>
+        <p>
+          Contact:
+          <a href="mailto:keshabdas2003@gmail.com" style="color:#22d3ee;">keshabdas2003@gmail.com</a>
+        </p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

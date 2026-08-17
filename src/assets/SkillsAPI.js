@@ -1,14 +1,14 @@
-import html from '/html.png'
-import css from '/css.png'
-import javascript from '/javascript.png'
-import reactjs from '/reactjs.png'
-import redux from '/redux.png'
-import tailwind from '/tailwind.png'
-import bootstrap from '/bootstrap.png'
-import material from '/material.png'
-import nodejs from '/nodejs.png'
-import expressjs from '/expressjs.png'
-import sql from "/sql.png"
+import html from '/skills/html.png'
+import css from '/skills/css.png'
+import javascript from '/skills/javascript.png'
+import reactjs from '/skills/reactjs.png'
+import redux from '/skills/redux.png'
+import tailwind from '/skills/tailwind.png'
+import bootstrap from '/skills/bootstrap.png'
+import material from '/skills/material.png'
+import nodejs from '/skills/nodejs.png'
+import expressjs from '/skills/expressjs.png'
+import sql from "/skills/sql.png"
 
 
 const WEBtechnologies = [

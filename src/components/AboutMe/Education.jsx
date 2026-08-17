@@ -1,50 +1,88 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaGraduationCap, FaSchool, FaUniversity } from 'react-icons/fa';
+
+const items = [
+  {
+    year: '2021 — 2025',
+    title: 'B.Tech in Information Technology',
+    org: 'Jalpaiguri Government Engineering College',
+    icon: <FaUniversity />,
+    accent: 'from-cyan-400 to-violet-500',
+    desc:
+      "Appeared for WBJEE in 2021 (AIR 7229) and joined Information Technology through online counselling. Building a strong foundation in software engineering, data structures, and modern web development.",
+  },
+  {
+    year: '2019 — 2021',
+    title: 'Higher Secondary',
+    org: 'Dainhat High School (WBCHSE)',
+    icon: <FaGraduationCap />,
+    accent: 'from-violet-500 to-pink-500',
+    desc:
+      'Completed higher secondary with 76% under the West Bengal Council of Higher Secondary Examination in 2021.',
+  },
+  {
+    year: '2014 — 2019',
+    title: 'Madhyamik Examination',
+    org: 'Okersha High School (WBBSE)',
+    icon: <FaSchool />,
+    accent: 'from-pink-500 to-amber-400',
+    desc:
+      'Passed secondary examination with 69% under the West Bengal Board of Secondary Examination in 2019.',
+  },
+];
 
 const Education = () => {
   return (
-      <div className=' w-full h-full sm:px-[200px] px-4 text-center bg-black py-10 imgbag'>
-          <h1 className=' text-5xl text-white font-bold'>Education</h1>
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-10">
-              <li>
-                  <div className="timeline-middle">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                  </div>
-                  <div className="timeline-start md:text-end mb-10">
-                      <time className="font-mono italic text-white">2021-2025</time>
-                      <div className="text-lg font-black text-white">B.Tech In Information Technology</div>
-                      I appeared for WBJEE in year 2021 and obtained 7229 rank, then i appeared for online counselling of WBJEE and got an opportunity to study in Information Technology Department in Jalpaiguri Government Engineering College, autonomous.
-                  </div>
-                  <hr />
-              </li>
-              <li>
-                  <hr />
-                  <div className="timeline-middle">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                  </div>
-                  <div className="timeline-end mb-10 flex flex-col  sm:items-start">
-                      <time className="font-mono italic text-white float-left">2019-2021</time>
-                      <div className="text-lg font-black text-white float-left">Higher Secondary</div>
-                      <h1 className=' sm:text-left'>
-                          I passed higher secondary from Dainhat High School affiliated to West Bengal Council Of Higher Secondary Examination with 76 percentage in 2021.</h1>
-                  </div>
-                  <hr />
-              </li>
-              
-              <li>
-                  <hr />
-                  <div className="timeline-middle">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-                  </div>
-                  <div className="timeline-start md:text-end mb-10">
-                      <time className="font-mono italic text-white">2014-2019</time>
-                      <div className="text-lg font-black text-white">Madhyamik Examination</div>
-                      I passed secondary examination from Okersha High School affiliated to West Bengal Board of Secondary Examination with 69 percentage in 2019.
-                  </div>
-              </li>
-              
-          </ul>
-    </div>
-  )
-}
+    <section className="section">
+      <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
+        <div>
+          <span className="heading-eyebrow">Education</span>
+          <h2 className="heading-xl mt-3">Academic journey.</h2>
+        </div>
+        <p className="text-slate-400 text-sm max-w-md">
+          A path of consistent learning — from secondary school to engineering,
+          building strong fundamentals along the way.
+        </p>
+      </div>
 
-export default Education
+      <div className="relative">
+        {/* Vertical line */}
+        <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-400/50 via-violet-500/40 to-transparent"></div>
+
+        <div className="space-y-12">
+          {items.map((it, i) => (
+            <motion.div
+              key={it.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className={`relative grid grid-cols-1 sm:grid-cols-2 sm:gap-12 items-center ${
+                i % 2 === 0 ? '' : 'sm:[&>div:first-child]:order-2'
+              }`}
+            >
+              <div className="pl-12 sm:pl-0">
+                <span className="font-mono text-xs text-cyan-300 uppercase tracking-widest">{it.year}</span>
+                <h3 className="font-display text-xl font-bold text-white mt-1">{it.title}</h3>
+                <p className="text-slate-400 text-sm mt-1">{it.org}</p>
+                <p className="text-slate-300/90 text-sm mt-3 leading-relaxed">{it.desc}</p>
+              </div>
+              <div className="hidden sm:block"></div>
+
+              {/* Center icon */}
+              <div className="absolute left-0 sm:left-1/2 sm:-translate-x-1/2 top-1">
+                <div className={`relative w-9 h-9 rounded-full grid place-items-center bg-gradient-to-br ${it.accent} shadow-glow-cyan`}>
+                  <span className="text-ink-950 text-base">{it.icon}</span>
+                  <span className="absolute inset-0 rounded-full bg-white/10 animate-pulse-ring"></span>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Education;

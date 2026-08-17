@@ -84,12 +84,3 @@
 .btn:hover .right {
   height: 100%;
 }
-
-
-.imgbag{
-  background-image: url("/banner2.jpg");
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}

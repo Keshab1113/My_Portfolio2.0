@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AiFillGithub } from 'react-icons/ai';
-import { FaGlobeAmericas, FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import projects from './ProjectData';
 
 const ProjectCard = ({ project, index }) => {
   return (
@@ -34,9 +33,7 @@ const ProjectCard = ({ project, index }) => {
           <p className="text-[11px] font-mono uppercase tracking-widest text-cyan-300/80 mb-2">Technologies</p>
           <div className="flex flex-wrap gap-1.5">
             {project.skills.map(([tag], i) => (
-              <span key={i} className="chip">
-                {tag}
-              </span>
+              <span key={i} className="chip">{tag}</span>
             ))}
           </div>
         </div>
@@ -64,15 +61,4 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-const MyAllprojects = ({ items }) => {
-  const list = items || projects;
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {list.map((p, i) => (
-        <ProjectCard key={p.name + i} project={p} index={i} />
-      ))}
-    </div>
-  );
-};
-
-export default MyAllprojects;
+export default ProjectCard;

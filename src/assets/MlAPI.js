@@ -1,11 +1,11 @@
-import cpp from '/cpp.png'
-import c from '/c.png'
-import javascript from '/javascript.png'
-import python from '/python.png'
-import postman from '/postman.png'
-import git from '/git.png'
-import github from '/github.png'
-import vscode from '/vs.png'
+import cpp from '/skills/cpp.png'
+import c from '/skills/c.png'
+import javascript from '/skills/javascript.png'
+import python from '/skills/python.png'
+import postman from '/skills/postman.png'
+import git from '/skills/git.png'
+import github from '/skills/github.png'
+import vscode from '/skills/vs.png'
 
 
 const LandTtechnologies = [

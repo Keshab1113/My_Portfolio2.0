@@ -1,18 +1,28 @@
-import zomato from "/zomato.png"
-import flights from "/flights.png"
-import AdminPanel from "/AdminPanel.png"
-import commutego from "/commutego.png"
-import panel from "/panel.png"
-import gamming from "/gamming.png"
+import zomato from "/projects/zomato.png"
+import flights from "/projects/flights.png"
+import AdminPanel from "/projects/AdminPanel.png"
+import commutego from "/projects/commutego.png"
+import panel from "/projects/panel.png"
+import gamming from "/projects/gamming.png"
+import officemom from "/projects/officemom.png"
 
 const projects = [
     {
+        name: "OfficeMoM",
+        image: officemom,
+        description: "Automate meeting minutes seamlessly with AI-powered transcription and smart formatting. Capture every detail without lifting a pen, from key points to action items. Get organized summaries instantly, ready to share with your team. Save time, improve accuracy, and keep every meeting productive.",
+        skills: [["#ReactJs", "bg-blue-700"], ["#nodeJs", "bg-yellow-400"], ["#mySQL", "bg-green-700"], ["#tailwindcss","bg-red-700"],["#assemblyAI","bg-pink-500"], ["#expressJs", "bg-red-500"], ["#shadcn", "bg-green-500"]],
+        source: "",
+        link: "https://officemom.me",
+        subname:"AI-Powered Meeting Assistant",
+    },
+    {
         name: "CommuteGo",
         image: commutego,
-        description: "Creating an travel website using MERN stack. User can search destination route by Bus, Train, Flight, Metro. Now only Kolkata local buses are available.",
+        description: "CommuteGo is a premium three-pillar travel platform that transforms how Indians explore their country. Unlike typical travel websites that only answer 'Where should I stay?', CommuteGo answers three completely different questions",
         skills: [["#ReactJs", "bg-blue-700"], ["#expressJs", "bg-yellow-400"], ["#mongoDB", "bg-green-700"], ["#tailwindcss","bg-red-700"],["#nodeJs","bg-pink-500"]],
         source: "https://github.com/Keshab1113/CommuteGo",
-        link: "https://commute-go.vercel.app/",
+        link: "https://commutego.in",
         subname:"Travel Website",
     },
     {
