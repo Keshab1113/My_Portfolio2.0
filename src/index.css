@@ -139,7 +139,7 @@ body {
 
   /* Stylish display font for h1 — Unbounded with a soft gradient shimmer */
   h1, .heading-display {
-    font-family: 'Unbounded', 'Space Grotesk', sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     letter-spacing: -0.03em;
     color: #fff;
