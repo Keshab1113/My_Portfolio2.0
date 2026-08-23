@@ -33,7 +33,7 @@ const Projects = () => {
   }, [active]);
 
   return (
-    <div className="relative pt-28 pb-16">
+    <div className="relative md:pt-10 pt-5 pb-16">
       <Helmet>
         <title>Projects — Keshab Das</title>
         <meta

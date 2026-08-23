@@ -7,7 +7,7 @@ import Skills from '../../components/AboutMe/Skills';
 
 const AboutPage = () => {
   return (
-    <div className="relative pt-28 flex flex-col">
+    <div className="relative md:pt-10 pt-5 flex flex-col">
       <Helmet>
         <title>About — Keshab Das</title>
         <meta

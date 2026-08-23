@@ -73,7 +73,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="relative pt-28">
+    <div className="relative md:pt-10 pt-5">
       <Helmet>
         <title>Contact — Keshab Das</title>
         <meta

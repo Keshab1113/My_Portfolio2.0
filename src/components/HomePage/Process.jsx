@@ -406,7 +406,7 @@ const Process = () => {
       </div>
 
       {/* Split layout */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start ">
         {/* LEFT — Card stack */}
         <div className="relative">
           <CardStack items={cards} offset={20} activeIndex={activeIndex} />
@@ -476,7 +476,7 @@ const Process = () => {
         </div>
 
         {/* RIGHT — Animation panel (no sticky, no scroll triggers) */}
-        <div className="relative">
+        <div className="relative ">
           <div className="relative aspect-square w-full max-w-[480px] mx-auto rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-br from-ink-900/80 to-ink-950/80 backdrop-blur-sm shadow-2xl">
             {/* Background gradient that shifts per step */}
             <AnimatePresence mode="wait">

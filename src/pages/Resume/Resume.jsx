@@ -7,7 +7,7 @@ import { FaDownload, FaFileAlt } from 'react-icons/fa';
 
 const Resume = () => {
   return (
-    <div className="relative pt-28 pb-16">
+    <div className="relative md:pt-10 pt-5 pb-16">
       <Helmet>
         <title>Resume — Keshab Das</title>
         <meta
